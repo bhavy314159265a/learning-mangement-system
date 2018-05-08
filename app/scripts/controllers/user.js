@@ -13,7 +13,7 @@ app.controller('ctrl' ,function($scope,fctry,$location,$localStorage){
       if(data[0].userid==userid)
       {
         console.log("in success");
-        location.href = "http://localhost:2222/views/dashboard.html";
+        location.href = "https://learning-management-system-app.herokuapp.com/views/dashboard.html";
       }
       else if(data=='invalid')
       {
