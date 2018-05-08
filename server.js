@@ -30,6 +30,6 @@ app.post("/register",function(req,res){
   var checkRegister=require("./app/server/regdao");
   checkRegister(id,email,fname,lname,add,dob,gen,mobile,pwd,repass,res);
 }) ;
-app.listen(2222,function(){
-  console.log("Server Start......")
+app.listen(process.env.PORT ||2222,function(){
+  console.log("Server Started......")
 });
